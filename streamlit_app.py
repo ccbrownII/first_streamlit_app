@@ -38,7 +38,7 @@ streamlit.dataframe(fruityvice_normalized)
 #line below will tell your py file to use the library you added to the project
 import snowflake.connector
 
-#Query account metadata
+#Query trial account metadata
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
 my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
