@@ -55,5 +55,4 @@ add_my_fruit = streamlit.text_input('What fruit would you like to see added?', '
 streamlit.write('Thanks for suggesting', add_my_fruit)
 
 #update table with fruit end user chose to add
-my_cur.execute ("insert into fruit_load_list values(
-'from streamlit')");
+my_cur.execute ("insert into fruit_load_list values ('from streamlit')");
